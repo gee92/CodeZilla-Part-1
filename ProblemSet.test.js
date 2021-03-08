@@ -1,6 +1,26 @@
 
 const ProblemSet = require('./ProblemSet.js');
 
+test("timeConvert test01", () => {
+
+    let problem = new ProblemSet();
+    let expected = "2:6";
+
+    let actual = problem.timeConvert(126);
+
+    expect(actual).toEqual(expected);
+});
+
+test("timeConvert test02", () => {
+
+    let problem = new ProblemSet();
+    let expected = "0:45";
+
+    let actual = problem.timeConvert(45);
+
+    expect(actual).toEqual(expected);
+});
+
 test("countBigWords test01", () => {
 
     let problem = new ProblemSet();
